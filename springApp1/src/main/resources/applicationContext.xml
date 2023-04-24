@@ -5,7 +5,6 @@
     http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="testBeans" class="org.example.TestBeans">
-        <constructor-arg value="Это бин"/>
+    <bean id="musicBean" class="org.example.CountryMusic">
     </bean>
 </beans>

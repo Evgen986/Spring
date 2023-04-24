@@ -7,8 +7,9 @@ public class SpringTest {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
                 "applicationContext.xml"
         );
-        TestBeans testBeans = context.getBean("testBeans", TestBeans.class);
-        System.out.println(testBeans.getName());
+        Music music = context.getBean("musicBean", Music.class);
+        MusicPlayer musicPlayer = new MusicPlayer(music);
+        musicPlayer.playMusic();
         context.close();
     }
 }
